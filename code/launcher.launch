@@ -1,0 +1,7 @@
+<launch>
+  <node name="talker_node" pkg="teleop" type="talker.py" />
+  <node name="keyboard_talker" pkg="teleop" type="keyboard.py" />
+  <node name="serial_node" pkg="rosserial_python" type="serial_node.py">
+    <param name="port" value="/dev/ttyACM0"/>
+  </node>
+</launch>
